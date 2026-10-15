@@ -1,0 +1,914 @@
+{
+  "data": {
+    "wiki_path": "D:\\Claude_workplace\\work2\\基本语料\\train_bpe_dataset.txt",
+    "wiki_file_bytes": 614356107,
+    "people_path": "D:\\Claude_workplace\\work2\\人民日报数据\\1998-01-2003版-带音.txt",
+    "file_bytes": 5320005,
+    "sentence_lines": 19358,
+    "article_count": 3132,
+    "eligible_article_count": 2681
+  },
+  "wiki": {
+    "file_bytes": 614356107,
+    "eligible_paragraphs": 1216857,
+    "paragraphs_sampled": 12000,
+    "paragraphs_used": 11355,
+    "token_count": 233762,
+    "vocab_sizes": {
+      "Word2Vec CBOW": 14749,
+      "Word2Vec Skip-gram": 14749,
+      "FastText": 14749
+    }
+  },
+  "config": {
+    "max_wiki_paragraphs": 12000,
+    "vector_size": 100,
+    "window": 5,
+    "min_count": 3,
+    "epochs": 5,
+    "negative": 5,
+    "fasttext_sg": 1,
+    "fasttext_min_n": 2,
+    "fasttext_max_n": 4,
+    "label_min_hits": 1,
+    "samples_per_class": 60,
+    "test_size": 0.25,
+    "seed": 42
+  },
+  "raw_label_counts": {
+    "经济": 256,
+    "国际": 230,
+    "体育": 63
+  },
+  "sampled_counts_binary": {
+    "经济": 60,
+    "国际": 60
+  },
+  "sampled_counts_multi": {
+    "经济": 60,
+    "国际": 60,
+    "体育": 60
+  },
+  "splits": {
+    "2 类：经济 / 国际": {
+      "classes": [
+        "经济",
+        "国际"
+      ],
+      "n_documents": 120,
+      "n_train": 90,
+      "n_test": 30,
+      "test_per_class": {
+        "国际": 15,
+        "经济": 15
+      },
+      "errors": {
+        "TF-IDF + LogisticRegression": [
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "广州国际女足赛曲终人散中国队名列第三图片"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "总统内政外交强调保持睦邻关系"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "涉嫌接受金融机构贿赂大藏省官员被捕"
+          }
+        ],
+        "Word2Vec CBOW": [
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "土耳其驱逐十四伊拉克移民欧洲土耳其合作防止非法移民"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "商讨政治解决北爱危机布莱尔亚当斯会谈"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "越南实施经济紧缩政策"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "广州国际女足赛曲终人散中国队名列第三图片"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "伊拉克危机动向"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "伟人风范举世景仰国际友人题辞纪念恩来图片"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "常驻联合国代表尽快结束伊拉克核查"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "全球经济中国经济发展研讨会"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "监狱会谈图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "渤海区域经济发展战略研讨会"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "发展经济交通先行鹤山文章"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "总统会谈"
+          }
+        ],
+        "Word2Vec Skip-gram": [
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "商讨政治解决北爱危机布莱尔亚当斯会谈"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "总统内政外交强调保持睦邻关系"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "俄罗斯欧洲外交试析"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "台湾政要频繁部分东南亚国家活动外交部发言人发表谈话"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "涉嫌接受金融机构贿赂大藏省官员被捕"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "东南亚金融风暴冲击拉美股市"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "中央纪委监察部业江受贿案发出通报严禁党员干部利用职权收受股票"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "伊拉克武器核查外交部发言人"
+          }
+        ],
+        "FastText": [
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "菲律宾去年经济保持增长"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "东南亚金融风暴冲击拉美股市"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "中央纪委监察部业江受贿案发出通报严禁党员干部利用职权收受股票"
+          }
+        ]
+      }
+    },
+    "3 类：经济 / 国际 / 体育": {
+      "classes": [
+        "经济",
+        "国际",
+        "体育"
+      ],
+      "n_documents": 180,
+      "n_train": 135,
+      "n_test": 45,
+      "test_per_class": {
+        "国际": 15,
+        "经济": 15,
+        "体育": 15
+      },
+      "errors": {
+        "TF-IDF + LogisticRegression": [
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "我国铁路营业里程亚洲第一"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "国际北方城市市长会议闭幕"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "中国外贸跻身全球去年进出口总值3250亿美元"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "一九九七年股市概览"
+          }
+        ],
+        "Word2Vec CBOW": [
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "阿尔巴尼亚高息集资引发金融风潮社会动荡酿成政治危机"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "世界公司看好中国经济前景"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "国有企业改革突破性进展今年经济主要任务"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "企业破产厂长破产"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "工业污染源达标排放淮河第一战役告捷"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "伊拉克禁止核查小组执行任务安南规劝巴格达不要激化矛盾"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "萨达姆呼吁联合国取消制裁"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "渤海区域经济发展战略研讨会"
+          },
+          {
+            "true": "体育",
+            "predicted": "国际",
+            "title": "中国香港业余体育协会奥委会主席辞职"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "第一全国农业普查快速汇总结果公报农村镇区规模及其社会经济状况"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "本报代表团访问法国新闻媒体"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "总统会谈"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "伟人风范举世景仰国际友人题辞纪念恩来图片"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "美国科学家扬言克隆克林顿呼吁禁区"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "联合国特委会总部袭击"
+          },
+          {
+            "true": "体育",
+            "predicted": "经济",
+            "title": "素丽走近体育健儿图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "中国外贸跻身全球去年进出口总值3250亿美元"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "联合国三委谴责现行国际制裁党报发表评论支持三委声明"
+          },
+          {
+            "true": "体育",
+            "predicted": "国际",
+            "title": "教练助阵篮球冬训"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "监狱会谈图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "一九九七年股市概览"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "东南亚金融风暴冲击拉美股市"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "世界经济中国一九九七报告会举行"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "中央纪委监察部业江受贿案发出通报严禁党员干部利用职权收受股票"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "土耳其驱逐十四伊拉克移民欧洲土耳其合作防止非法移民"
+          }
+        ],
+        "Word2Vec Skip-gram": [
+          {
+            "true": "体育",
+            "predicted": "经济",
+            "title": "雪地足球想到"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "我国铁路营业里程亚洲第一"
+          },
+          {
+            "true": "体育",
+            "predicted": "国际",
+            "title": "中国香港业余体育协会奥委会主席辞职"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "国际北方城市市长会议闭幕"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "本报代表团访问法国新闻媒体"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "伟人风范举世景仰国际友人题辞纪念恩来图片"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "联合国特委会总部袭击"
+          },
+          {
+            "true": "体育",
+            "predicted": "国际",
+            "title": "素丽走近体育健儿图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "中国外贸跻身全球去年进出口总值3250亿美元"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "联合国三委谴责现行国际制裁党报发表评论支持三委声明"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "监狱会谈图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "东南亚金融风暴冲击拉美股市"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "世界经济中国一九九七报告会举行"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "中央纪委监察部业江受贿案发出通报严禁党员干部利用职权收受股票"
+          }
+        ],
+        "FastText": [
+          {
+            "true": "体育",
+            "predicted": "经济",
+            "title": "全民健身新岁体育春潮神州图片"
+          },
+          {
+            "true": "体育",
+            "predicted": "经济",
+            "title": "雪地足球想到"
+          },
+          {
+            "true": "国际",
+            "predicted": "经济",
+            "title": "我国铁路营业里程亚洲第一"
+          },
+          {
+            "true": "体育",
+            "predicted": "国际",
+            "title": "中国香港业余体育协会奥委会主席辞职"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "国际北方城市市长会议闭幕"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "本报代表团访问法国新闻媒体"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "总统会谈"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "伟人风范举世景仰国际友人题辞纪念恩来图片"
+          },
+          {
+            "true": "体育",
+            "predicted": "国际",
+            "title": "素丽走近体育健儿图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "中国外贸跻身全球去年进出口总值3250亿美元"
+          },
+          {
+            "true": "国际",
+            "predicted": "体育",
+            "title": "监狱会谈图片"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "一九九七年股市概览"
+          },
+          {
+            "true": "经济",
+            "predicted": "体育",
+            "title": "东南亚金融风暴冲击拉美股市"
+          },
+          {
+            "true": "经济",
+            "predicted": "国际",
+            "title": "世界经济中国一九九七报告会举行"
+          }
+        ]
+      }
+    }
+  },
+  "metrics": [
+    {
+      "task": "2 类：经济 / 国际",
+      "method": "TF-IDF + LogisticRegression",
+      "accuracy": 0.9,
+      "macro_f1": 0.899888765294772,
+      "weighted_f1": 0.899888765294772,
+      "macro_precision": 0.9017857142857143,
+      "macro_recall": 0.9,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "2 类：经济 / 国际",
+      "method": "Word2Vec CBOW",
+      "accuracy": 0.6,
+      "macro_f1": 0.5927601809954751,
+      "weighted_f1": 0.5927601809954751,
+      "macro_precision": 0.6076555023923444,
+      "macro_recall": 0.6,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "2 类：经济 / 国际",
+      "method": "Word2Vec Skip-gram",
+      "accuracy": 0.7333333333333333,
+      "macro_f1": 0.7321428571428572,
+      "weighted_f1": 0.7321428571428572,
+      "macro_precision": 0.7375565610859729,
+      "macro_recall": 0.7333333333333334,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "2 类：经济 / 国际",
+      "method": "FastText",
+      "accuracy": 0.9,
+      "macro_f1": 0.898989898989899,
+      "weighted_f1": 0.898989898989899,
+      "macro_precision": 0.9166666666666667,
+      "macro_recall": 0.9,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "method": "TF-IDF + LogisticRegression",
+      "accuracy": 0.9111111111111111,
+      "macro_f1": 0.9103201087628229,
+      "weighted_f1": 0.910320108762823,
+      "macro_precision": 0.9109126984126984,
+      "macro_recall": 0.9111111111111111,
+      "n_train": 135,
+      "n_test": 45
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "method": "Word2Vec CBOW",
+      "accuracy": 0.4444444444444444,
+      "macro_f1": 0.41113234591495457,
+      "weighted_f1": 0.4111323459149546,
+      "macro_precision": 0.4198717948717949,
+      "macro_recall": 0.4444444444444445,
+      "n_train": 135,
+      "n_test": 45
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "method": "Word2Vec Skip-gram",
+      "accuracy": 0.6888888888888889,
+      "macro_f1": 0.6856985450629804,
+      "weighted_f1": 0.6856985450629804,
+      "macro_precision": 0.6946532999164577,
+      "macro_recall": 0.6888888888888888,
+      "n_train": 135,
+      "n_test": 45
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "method": "FastText",
+      "accuracy": 0.6888888888888889,
+      "macro_f1": 0.690782059950417,
+      "weighted_f1": 0.690782059950417,
+      "macro_precision": 0.7048872180451128,
+      "macro_recall": 0.6888888888888888,
+      "n_train": 135,
+      "n_test": 45
+    }
+  ],
+  "confusion_matrices": {
+    "2 类：经济 / 国际": {
+      "TF-IDF + LogisticRegression": [
+        [
+          14,
+          1
+        ],
+        [
+          2,
+          13
+        ]
+      ],
+      "Word2Vec CBOW": [
+        [
+          11,
+          4
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "Word2Vec Skip-gram": [
+        [
+          12,
+          3
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "FastText": [
+        [
+          12,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ]
+    },
+    "3 类：经济 / 国际 / 体育": {
+      "TF-IDF + LogisticRegression": [
+        [
+          13,
+          2,
+          0
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          0,
+          0,
+          15
+        ]
+      ],
+      "Word2Vec CBOW": [
+        [
+          3,
+          6,
+          6
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          12
+        ]
+      ],
+      "Word2Vec Skip-gram": [
+        [
+          11,
+          2,
+          2
+        ],
+        [
+          2,
+          8,
+          5
+        ],
+        [
+          1,
+          2,
+          12
+        ]
+      ],
+      "FastText": [
+        [
+          11,
+          1,
+          3
+        ],
+        [
+          1,
+          9,
+          5
+        ],
+        [
+          2,
+          2,
+          11
+        ]
+      ]
+    }
+  },
+  "neighbors": [
+    {
+      "词": "中国",
+      "Word2Vec CBOW": "建立 (1.00)、人物 (1.00)、大陆 (1.00)、校友 (1.00)、中华人民共和国 (1.00)",
+      "FastText": "建国 (0.96)、高校 (0.95)、重点中学 (0.95)、国立大学 (0.95)、广东省 (0.95)"
+    },
+    {
+      "词": "经济",
+      "Word2Vec CBOW": "铁路 (1.00)、德国 (1.00)、国际 (1.00)、最早 (1.00)、王朝 (1.00)",
+      "FastText": "农业 (0.97)、经济社会 (0.97)、发展 (0.97)、专业 (0.96)、国家主义 (0.96)"
+    },
+    {
+      "词": "足球",
+      "Word2Vec CBOW": "中心 (0.99)、世界 (0.99)、文法 (0.99)、超级 (0.99)、洛克 (0.99)",
+      "FastText": "isbn (0.96)、nhk (0.96)、排名 (0.96)、足球赛 (0.96)、主演 (0.95)"
+    },
+    {
+      "词": "数学",
+      "Word2Vec CBOW": "作品 (1.00)、成为 (1.00)、思想 (1.00)、和平 (1.00)、东北 (1.00)",
+      "FastText": "算学 (0.99)、儒学 (0.99)、医学 (0.99)、科学 (0.99)、理学 (0.99)"
+    }
+  ],
+  "vector_size_sensitivity": [
+    {
+      "task": "2 类：经济 / 国际",
+      "vector_size": 50,
+      "method": "FastText",
+      "accuracy": 0.9,
+      "macro_f1": 0.898989898989899,
+      "weighted_f1": 0.898989898989899,
+      "macro_precision": 0.9166666666666667,
+      "macro_recall": 0.9,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "vector_size": 50,
+      "method": "FastText",
+      "accuracy": 0.7111111111111111,
+      "macro_f1": 0.7126393866985264,
+      "weighted_f1": 0.7126393866985264,
+      "macro_precision": 0.7226307189542484,
+      "macro_recall": 0.7111111111111111,
+      "n_train": 135,
+      "n_test": 45
+    },
+    {
+      "task": "2 类：经济 / 国际",
+      "vector_size": 100,
+      "method": "FastText",
+      "accuracy": 0.9,
+      "macro_f1": 0.898989898989899,
+      "weighted_f1": 0.898989898989899,
+      "macro_precision": 0.9166666666666667,
+      "macro_recall": 0.9,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "vector_size": 100,
+      "method": "FastText",
+      "accuracy": 0.6888888888888889,
+      "macro_f1": 0.690782059950417,
+      "weighted_f1": 0.690782059950417,
+      "macro_precision": 0.7048872180451128,
+      "macro_recall": 0.6888888888888888,
+      "n_train": 135,
+      "n_test": 45
+    },
+    {
+      "task": "2 类：经济 / 国际",
+      "vector_size": 200,
+      "method": "FastText",
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.8642533936651584,
+      "weighted_f1": 0.8642533936651584,
+      "macro_precision": 0.8947368421052632,
+      "macro_recall": 0.8666666666666667,
+      "n_train": 90,
+      "n_test": 30
+    },
+    {
+      "task": "3 类：经济 / 国际 / 体育",
+      "vector_size": 200,
+      "method": "FastText",
+      "accuracy": 0.6888888888888889,
+      "macro_f1": 0.6888888888888888,
+      "weighted_f1": 0.6888888888888889,
+      "macro_precision": 0.6981481481481482,
+      "macro_recall": 0.6888888888888888,
+      "n_train": 135,
+      "n_test": 45
+    }
+  ],
+  "article_lengths": {
+    "经济": {
+      "n": 60,
+      "mean": 277.9166666666667,
+      "median": 212.5,
+      "q1": 97.25,
+      "q3": 414.0,
+      "min": 27,
+      "max": 867
+    },
+    "国际": {
+      "n": 60,
+      "mean": 137.61666666666667,
+      "median": 112.5,
+      "q1": 73.5,
+      "q3": 160.0,
+      "min": 8,
+      "max": 573
+    },
+    "体育": {
+      "n": 60,
+      "mean": 128.11666666666667,
+      "median": 127.5,
+      "q1": 84.75,
+      "q3": 157.5,
+      "min": 24,
+      "max": 324
+    }
+  },
+  "vocabulary_coverage": {
+    "Word2Vec CBOW": {
+      "token_count": 32619,
+      "covered_token_count": 24702,
+      "token_coverage": 0.7572886967718201,
+      "unique_type_count": 7122,
+      "covered_type_count": 3281,
+      "type_coverage": 0.460685200786296
+    },
+    "Word2Vec Skip-gram": {
+      "token_count": 32619,
+      "covered_token_count": 24702,
+      "token_coverage": 0.7572886967718201,
+      "unique_type_count": 7122,
+      "covered_type_count": 3281,
+      "type_coverage": 0.460685200786296
+    },
+    "FastText": {
+      "token_count": 32619,
+      "covered_token_count": 32619,
+      "token_coverage": 1.0,
+      "unique_type_count": 7122,
+      "covered_type_count": 7122,
+      "type_coverage": 1.0
+    }
+  },
+  "class_f1": {
+    "2 类：经济 / 国际": {
+      "TF-IDF + LogisticRegression": {
+        "经济": 0.9032258064516129,
+        "国际": 0.896551724137931
+      },
+      "Word2Vec CBOW": {
+        "经济": 0.6470588235294117,
+        "国际": 0.5384615384615385
+      },
+      "Word2Vec Skip-gram": {
+        "经济": 0.7500000000000001,
+        "国际": 0.7142857142857142
+      },
+      "FastText": {
+        "经济": 0.888888888888889,
+        "国际": 0.9090909090909091
+      }
+    },
+    "3 类：经济 / 国际 / 体育": {
+      "TF-IDF + LogisticRegression": {
+        "经济": 0.896551724137931,
+        "国际": 0.8666666666666667,
+        "体育": 0.967741935483871
+      },
+      "Word2Vec CBOW": {
+        "经济": 0.26086956521739135,
+        "国际": 0.3571428571428571,
+        "体育": 0.6153846153846154
+      },
+      "Word2Vec Skip-gram": {
+        "经济": 0.7586206896551724,
+        "国际": 0.5925925925925926,
+        "体育": 0.7058823529411765
+      },
+      "FastText": {
+        "经济": 0.7586206896551724,
+        "国际": 0.6666666666666665,
+        "体育": 0.6470588235294117
+      }
+    }
+  }
+}
